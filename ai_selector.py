@@ -2,9 +2,9 @@ from llm import GeminiClient
 
 class AIContextSelector:
     def __init__(self):
-        self.llm = GeminiClient
+        self.llm = GeminiClient()
 
-    def select_files(self, files, user_request):
+    def select(self, files, user_request):
         tree = "\n".join(files)
 
         prompt = f"""
@@ -26,4 +26,8 @@ Rules:
 """
         response = self.llm.generate(prompt)
 
-        return response.strip().split("\n")
+        return [
+            path.strip().strip("-").strip("`").strip()
+            for path in response.splitlines()
+            if path.strip()
+            ]

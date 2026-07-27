@@ -1,7 +1,7 @@
 import argparse
 
 from explorer import RepositoryExplorer
-from context_selector import ContextSelector
+from ai_selector import AIContextSelector
 from reader import RepositoryReader
 from planner import Planner
 from editor import Editor
@@ -24,8 +24,8 @@ def main():
     files = explorer.explore(args.repo)
 
     #Step 2: Select Relevant Files
-    selector = ContextSelector()
-    selected_files = selector.select(files)
+    selector = AIContextSelector()
+    selected_files = selector.select(files, user_request)
 
     print("Selected Files:")
 
