@@ -178,3 +178,10 @@ changes.
 -   Execute tests after modifications to validate the generated code.
 -   Improve file selection using semantic repository analysis instead of
     rule-based heuristics.
+
+--------------------------------------------------------------------------
+
+# Proof of Work
+
+-   Forked Repo with code changes made by AI Agent: - https://github.com/rajatsingh23/node-easy-notes-app
+-   Google Drive Video linl: - https://drive.google.com/file/d/1QntKdfABOjaJ9-99350PQT_lguKM2-37/view?usp=drive_link

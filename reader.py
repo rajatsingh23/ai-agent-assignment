@@ -8,7 +8,7 @@ class RepositoryReader:
         repo = Path(repo_path)
 
         file_contents = {}
-
+        print("\nReader is reading the files")
         for file in file_list:
             full_path = repo / file
 

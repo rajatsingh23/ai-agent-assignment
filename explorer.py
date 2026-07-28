@@ -19,7 +19,6 @@ class RepositoryExplorer:
     def explore(self, repo_path):
         repo = Path(repo_path)
         files = []
-
         for item in repo.rglob('*'):
 
             if item.is_dir():

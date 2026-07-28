@@ -16,6 +16,7 @@ def main():
     args = parser.parse_args()
 
     user_request = "Improve the application so users can better organise and search their notes."
+    print(f"[PROMPT] - {user_request}")
 
     print("Scanning repository...\n")
 

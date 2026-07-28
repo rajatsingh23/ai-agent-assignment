@@ -8,7 +8,7 @@ class Planner:
         files = task["files"]
         user_request = task["request"]
         context = ""
-
+        print("\nPlanner is Planning")
         for path, content in files.items():
 
             context += f"""

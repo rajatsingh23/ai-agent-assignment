@@ -7,7 +7,6 @@ class Editor:
         self.llm = GeminiClient()
 
     def edit_files(self, file_path, current_code, user_request):
-
         prompt = f"""
 You are an expert software engineer.
 
